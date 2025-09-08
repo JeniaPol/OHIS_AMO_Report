@@ -1,4 +1,4 @@
-# AmoCRM → Отчёт по тегам (v2)
+# OHIS AmoCRM → Отчёт по тегам (v2)
 
 - Каждая строка = выбранный **тег сделки**.
 - Автокомплит тегов из файла.
@@ -20,7 +20,7 @@ streamlit run app.py
 ## Структура проекта
 
 ```
-AMO_CRM_Report/
+OHIS_AMO_Report/
   app.py                  # Streamlit-приложение
   config.yaml             # Конфигурация стадий/воронок
   amo_report/
