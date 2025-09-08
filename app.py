@@ -18,9 +18,9 @@ st.title("AmoCRM → Отчёт с разрезом по тегам")
 
 @st.cache_resource
 def get_cfg():
-    # Support running from project root or app folder
+    # Try local folder first, then repo root
     try:
-        return load_config("AMO_CRM_Report/config.yaml")
+        return load_config("OHIS_AMO_Report/config.yaml")
     except FileNotFoundError:
         return load_config("config.yaml")
 
