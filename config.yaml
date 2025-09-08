@@ -1,0 +1,112 @@
+funnels:
+  RUS: ["CRM RU", "Корзина", "Upsale ecom", "Продление Premium"]
+  ENG: ["CRM ENG", "Cart ENG", "upsale ecom ENG", "Premium Prolongation ENG"]
+  ESP: ["CRM ESP", "Cart ESP"]
+
+stages:
+  already_bought:
+    RUS: ["уже купил"]
+    ENG: ["already bought"]
+    ESP: ["already bought"]
+
+  closed_not_impl:
+    RUS: ["закрыто и не реализовано"]
+    ENG: ["закрыто и не реализовано", "closed and not implemented"]
+    ESP: ["закрыто и не реализовано", "closed and not implemented"]
+
+  lead_not_distributed:
+    RUS: ["лид не распределен", "лид не распределён"]
+    ENG: ["lead not distributed", "lead no distributed"]
+    ESP: ["lead not distributed", "lead no distributed"]
+
+  contact_group:
+    RUS: [
+      "контакт 1",
+      "клиент ушел в чнт после контакта", 
+      "счёт выставлен",
+      "аванс", "успешно",
+      "апсейл", "не купил - причины почему не купил",
+      "успешно реализовано",
+      "отказался от premium - причина",
+      "подписка продлена",
+      "клиент вышел на связь и ушел в игнор",
+      "продолжаем работу после контакта 1 (купит в конце февраля)",
+      "контакт 1 (дозвон клиенту, если не купил и не ответил в мессе)",
+      "не купил",
+    ]
+    ENG: [
+      "contact 1",
+      "contact 1 (called the client, not bought yet)",
+      "pnr after contact",
+      "invoice sent",
+      "аванс",
+      "успешно",
+      "апсейл",
+      "didn't buy - reason",
+      "успешно реализовано",
+      "refused premium - reason",
+      "subscription renewed",
+      "контакт 1 (дозвон клиенту, если не купил и не ответил в мессе)",
+      "Contact 1 (stage if the doctor answered either the call or in a message)",
+      "we continue work after contact 1 (in February)",
+    ]
+    ESP: [
+      "contact 1",
+      "pnr after contact",
+      "invoice sent",
+      "аванс",
+      "успешно",
+      "апсейл",
+      "didn't buy - reason",
+      "успешно реализовано",
+      "контакт 1 (дозвон клиенту, если не купил и не ответил в мессе)",
+    ]
+
+  # Contact stages specifically for auto messages (перечень для "Автосообщение")
+  contact_group_auto:
+    RUS: [
+      "счет выставлен (полностью)",
+      "контакт 1",
+      "клиент ушел в чнт после контакта",
+      "не купил - причина",
+      "счет выставлен (аванс)",
+      "аванс",
+      "успешно реализовано",
+      "закрыто и не реализовано",
+      "отказался от premium - причина",
+      "подписка продлена",
+      "клиент вышел на связь и ушел в игнор",
+      "продолжаем работу после контакта 1 (купит в конце февраля)",
+      "контакт 1 (дозвон клиенту, если не купил и не ответил в мессе)",
+      "не купил",
+    ]
+    ENG: [
+      "CONTACT 1",
+      "contact 1 (called the client, not bought yet)",
+      "PNR AFTER CONTACT",
+      "DIDN'T BUY - REASON",
+      "INVOICE SENT (PREPAYMENT)",
+      "PREPAYMENT",
+      "SUCCESSFULLY AND IMPLEMENTED",
+      "INVOICE SENT (FULL PAYMENT)",
+      "CLOSED AND NOT IMPLEMENTED",
+      "REFUSED PREMIUM - REASON",
+      "SUBSCRIPTION RENEWED",
+      "контакт 1 (дозвон клиенту, если не купил и не ответил в мессе)",
+      "Contact 1 (stage if the doctor answered either the call or in a message)",
+      "we continue work after contact 1 (in February)",
+    ]
+
+  reply_group:
+    ALL: ["успешно", "аванс", "успешно реализовано"]
+
+  # Стадии, учитывающиеся в обороте (оплаченные)
+  revenue_group:
+    RUS: ["аванс", "успешно реализовано"]
+    ENG: ["prepayment", "successfully and implemented"]
+    ESP: ["prepayment", "successfully and implemented"]
+
+  no_wazzap:
+    RUS: ["no wazzap", "NO WAZZUP", "нет вазапа", "no whatsapp"]
+    ENG: ["no wazzap", "NO WAZZUP", "no whatsapp"]
+    ESP: ["no wazzap", "NO WAZZUP", "no whatsapp"]
